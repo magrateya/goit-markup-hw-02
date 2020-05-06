@@ -5,10 +5,16 @@
 /* контакти в футері rgba(255, 255, 255, 0.6) */
 /* розробники в футері rgba(255, 255, 255, 0.4) */
 /* другорядний колір фону  #F5F4FA */
-
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --bg-button-color: #f5f4fa;
+}
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .web {
   color: #2196f3;
@@ -18,4 +24,40 @@ body {
 }
 ul {
   list-style: none;
+}
+/* titles color */
+.section .section-titles {
+  color: var(--title-text-color);
+}
+.hero .hero-title {
+  color: var(--primary-white-color);
+}
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.names {
+  color: var(--title-text-color);
+}
+
+/* портфолио */
+
+/* ссылки на разделы */
+.chapters .button {
+  color: var(--title-text-color);
+  background-color: var(--bg-button-color);
+}
+.chapters .button:hover,
+.chapters .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.example .example-title {
+  color: var(--title-text-color);
+}
+.example .paragraf {
+  color: var(--primary-text-color);
+}
+.example .examle-text {
+  color: var(--primary-white-color);
 }
