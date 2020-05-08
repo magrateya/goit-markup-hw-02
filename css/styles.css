@@ -12,6 +12,16 @@
   --primary-white-color: #ffffff;
   --bg-button-color: #f5f4fa;
 }
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.7;
+}
 .nav .link {
   color: var(--title-text-color);
 }
@@ -26,16 +36,6 @@
 .contacts .link:focus {
   color: var(--accent-color);
 }
-
-body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.7;
-}
 ul {
   list-style: none;
 }
@@ -47,16 +47,12 @@ ul {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
-
-  letter-spacing: 0.03em;
 }
 .logo-studio {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
-
-  letter-spacing: 0.03em;
 }
 .nav {
   font-weight: 500;
@@ -69,6 +65,8 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  letter-spacing: 0.02em;
 }
 
 /* заголовки */
@@ -90,6 +88,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+
+  letter-spacing: 0.06em;
 }
 .section .section-titles {
   color: var(--title-text-color);
@@ -145,15 +145,20 @@ b {
   font-size: 12px;
   line-height: 2;
 }
-/* портфолио */
+/* страница портфолио */
 
-/* ссылки на разделы */
-button[type] {
+/* кнопки разделов */
+.filter button {
   color: var(--title-text-color);
   background-color: var(--bg-button-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: inherit;
 }
-button[type]:hover,
-button[type]:focus {
+.filter button:hover,
+.filter button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
