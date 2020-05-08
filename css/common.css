@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -10,7 +10,7 @@
 }
 .nav .link:hover,
 .nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .contacts .link {
   color: var(--primary-text-color);
@@ -18,4 +18,4 @@
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
-}
+} */
