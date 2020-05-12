@@ -5,12 +5,18 @@
 /* контакти в футері rgba(255, 255, 255, 0.6) */
 /* розробники в футері rgba(255, 255, 255, 0.4) */
 /* другорядний колір фону  #F5F4FA */
+/* фон заголовків background: rgba(47, 48, 58, 0.8) */
+/* фон футера #2F303A */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --bg-button-color: #f5f4fa;
+  --bg-title-activity-color: rgba(47, 48, 58, 0.8);
+  --bg-footer: #2f303a;
+  --footer-text-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-text-copyright: rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -42,29 +48,30 @@ ul {
 .link {
   text-decoration: none;
 }
-.logo-web {
-  color: var(--accent-color);
+/* лого шапка */
+.link > span {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+}
+.logo-web {
+  color: var(--accent-color);
 }
 .logo-studio {
   color: var(--title-text-color);
+}
+/* лого футер */
+.footer-contacts .logo-link {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.18;
+  text-decoration: none;
 }
 .footer-contacts .logo-web {
   color: var(--accent-color);
-  font-family: Raleway, sans-serif;
-  font-size: 22px;
-  line-height: 1.18;
 }
 .footer-contacts .logo-studio {
   color: var(--primary-white-color);
-  font-family: Raleway, sans-serif;
-  font-size: 22px;
-  line-height: 1.18;
 }
 .nav {
   font-weight: 500;
@@ -91,6 +98,7 @@ ul {
   line-height: 1.36;
 
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
   color: var(--primary-white-color);
@@ -114,14 +122,15 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .section .activity-title {
-  /* color: var(--primary-white-color); */
-  color: grey;
-
+  color: var(--primary-white-color);
+  background-color: var(--bg-title-activity-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .team-members {
@@ -136,23 +145,30 @@ ul {
   line-height: 1.2;
 }
 /* футер */
+footer {
+  background-color: var(--bg-footer);
+}
+
 .footer-contacts .link {
-  /* color: var(--primary-white-color); */
-  color: black;
+  color: var(--footer-text-contacts-color);
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
 }
+.link-item .link {
+  color: var(--primary-white-color);
+}
 b {
-  /* color: var(--primary-white-color); */
-  color: black;
+  color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .copyright {
-  color: var(--primary-white-color);
-  color: black;
+  color: var(--footer-text-copyright);
+
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
