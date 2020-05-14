@@ -18,7 +18,14 @@
   --footer-text-contacts-color: rgba(255, 255, 255, 0.6);
   --footer-text-copyright: rgba(255, 255, 255, 0.4);
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -27,6 +34,21 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.7;
+}
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  outline: 2px solid green;
+}
+header > .container {
+  margin-bottom: 0px;
+  padding: 0;
 }
 .nav .link {
   color: var(--title-text-color);
@@ -44,6 +66,19 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -92,6 +127,8 @@ ul {
 .hero .hero-title {
   color: var(--primary-white-color);
   background-color: aquamarine;
+  margin-top: 0px;
+  margin-bottom: 46px;
 
   font-weight: 900;
   font-size: 44px;
@@ -101,6 +138,12 @@ ul {
   text-transform: uppercase;
 }
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+
+  padding: 10px 32px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   text-decoration: none;
@@ -111,11 +154,17 @@ ul {
 
   letter-spacing: 0.06em;
 }
+.hero {
+  text-align: center;
+}
 .section .section-titles {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 .section .advantage-titles {
   color: var(--title-text-color);
@@ -123,7 +172,19 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
+.advantages-box > .section-titles {
+  margin-bottom: 0px;
+}
+.advantages-box {
+  padding-bottom: 0px;
+}
+.advantages {
+  background-color: grey;
+}
+
 .section .activity-title {
   color: var(--primary-white-color);
   background-color: var(--bg-title-activity-color);
@@ -131,6 +192,15 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.activity {
+  background-color: yellow;
+}
+.team {
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
+  background-color: var(--bg-button-color);
 }
 
 .team-members {
@@ -138,11 +208,17 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 16px;
+}
+.clients {
+  background-color: tomato;
 }
 /* футер */
 footer {
@@ -174,7 +250,9 @@ b {
   line-height: 2;
 }
 /* страница портфолио */
-
+.portfolio {
+  background-color: khaki;
+}
 /* кнопки разделов */
 .filter button {
   color: var(--title-text-color);
@@ -184,11 +262,15 @@ b {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: inherit;
+  border-radius: 4px;
 }
 .filter button:hover,
 .filter button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+.filter {
+  margin-bottom: 34px;
 }
 .example .example-title {
   color: var(--title-text-color);
@@ -196,12 +278,17 @@ b {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .example .paragraf {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+
+  margin-bottom: 20px;
 }
 .example .examle-text {
   /* color: var(--primary-white-color); */
@@ -209,4 +296,6 @@ b {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+
+  margin: 63px 24px;
 }
